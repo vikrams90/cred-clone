@@ -1,0 +1,630 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=GFS+Didot&family=Poppins:wght@200;300;400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background-color: rgb(15,15,15);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* padding: 60px; */
+}
+
+#navb{
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  
+}
+
+.navbar{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px;
+    }
+
+.navbar img{
+    height: 66px;
+}
+
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 50px;
+}
+
+.hero{
+    background-color: rgb(15,15,15);
+    background-image: url(./images/hero-bg.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 90vh;
+    padding: 45px 0;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-container h1{
+    font-size: 92px;
+    font-weight: 600;
+}
+
+.hero-container p{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hero-container button{
+    height: 70px;
+    border-radius: 50px;
+    width: 300px;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.image-section{
+   
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 50px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(15,15,15);
+    background-image: url(./images/video-bg.webp);
+    overflow-y: hidden;
+}
+
+.image-container{
+    height: 110vh;
+    /* padding: ; */
+    width: 100%;
+    position: relative;
+    /* background-color: #ffffff; */
+}
+
+.center-img{
+    position: absolute;
+    bottom: -10px;
+    left: 38%;
+    z-index: 10;
+}
+.left-img{
+    position: absolute;
+    bottom: -80px;
+    left: 38%;
+    z-index: 9;
+    transform: translateX(-50%);
+}
+
+.left-most-img{
+    position: absolute;
+    bottom: -160px;
+    left: 38%;
+    z-index: 8;
+    transform: translateX(-100%);
+}
+
+.right-img{
+    position: absolute;
+    bottom: -80px;
+    left: 38%;
+    z-index: 9;
+    transform: translateX(50%);
+}
+
+.right-most-img{
+    position: absolute;
+    bottom: -160px;
+    left: 38%;
+    z-index: 8;
+    transform: translateX(100%);
+}
+
+.rewards{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/deserve-more-bg.webp);
+}
+
+.rewards-container{
+    width: 1200px;
+}
+
+.rewards-container h1{
+    font-size: 80px;
+    opacity: 0.9;
+    color: #ffffff;
+}
+.rewards-container h4{
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.rewards-container p{
+    width: 50%;
+    color: #ffffff;
+}
+
+.rewards-container button{
+    margin-top: 40px;
+    width: 300px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 21px;
+    border: none;
+}
+
+.rewards-sub{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.sub-container{
+    width: 1200px;
+    padding:60px 50px ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sub-container h4{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rewards-list{
+    width: 100%;
+}
+
+.money{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/money-matters-bg.webp);
+}
+
+.money-container{
+    width: 1200px;
+    padding:60px 50px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.money-container h1{
+    font-size: 80px;
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+.money-container h4{
+    font-size: 28px;
+    color: #ffffff;
+}
+.money-container p{
+    width: 50%;
+    color: #ffffff;
+}
+.money-container button{
+    margin-top: 40px;
+    width: 400px;
+    font-weight: 600;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 21px;
+    border: none;
+}
+
+.features{
+    background-color: rgb(33, 36, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40vh;
+}
+
+.features-container{
+    width: 1200px;
+    display: flex;
+}
+
+.features-text{
+    width: 50%;
+
+}
+
+.text-1,.text-2,.text-3,.text-4{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.text-4{
+   padding-bottom: 200px;
+}
+
+.text-1{
+    padding-top: 200px;
+}
+
+.text-1 h1,.text-2 h1,.text-3 h1,.text-4 h1{
+    font-size: 90px;
+    line-height: 110px;
+}
+
+
+
+.stick-features{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+   
+    padding: 180px 20px;
+    position: relative;
+}
+
+.img-background{
+    background-color: black;
+    box-shadow: rgba(250, 250, 255, 0.16) 0px -5px 6px 0px inset, rgba(38, 37, 37, 0.24) 4px 6px 11px 1px inset;
+    border-radius: 46px;
+    height: 600px;
+    width: 350px;
+   position: sticky;
+   top: 50px;
+   overflow: hidden;
+}
+
+.img-background img{
+ position: absolute;
+ top: 0px;
+ width: 350px;
+ left: 200px;
+ transition: all ease-in-out 0.3s;
+}
+
+.empty{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-image: url(./images/neopop-image-mock.webp);
+}
+
+.security{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/security-bg.webp);
+}
+
+.security-container{
+    width: 1200px;
+    padding:60px 50px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.security-container h1{
+    font-size: 80px;
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+.security-container h4{
+    font-size: 28px;
+    color: #ffffff;
+}
+.security-container p{
+    width: 50%;
+    color: #ffffff;
+}
+.security-container button{
+    margin-top: 40px;
+    width: 400px;
+    font-weight: 600;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 21px;
+    border: none;
+}
+
+.trust{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/trust-bg.webp);
+}
+
+.trust-container{
+    display: flex;
+    width: 1200px;
+    align-items: center;
+
+}
+
+.trust-left{
+    padding-top: 0px;
+    width: 50%;
+    padding-left: 60px;
+    padding-top: 100px;
+}
+
+.trust-left h1{
+    font-size: 48px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.trust-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: #ffffff;
+}
+
+.rating{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    color: #ffffff;
+}
+
+.rating-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    gap: 50px;
+}
+
+.rating-app{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.rating-user{
+    padding: 0 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.rating-android, .rating-iphone{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rating-android img, .rating-iphone img{
+    width: 200px;
+}
+
+.rating-android h1, .rating-iphone h1{
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height: 150px;
+    opacity: 0.9;
+}
+
+.rating-android h1 span, .rating-iphone h1 span{
+    font-size: 64px;
+    display: flex;
+    line-height: 60px;
+}
+
+.rating-android button, .rating-iphone button{
+    margin-top: 40px;
+    width: 300px;
+    font-weight: 600;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 21px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating-android button img, .rating-iphone button img{
+    width: 50px;
+    font-size: 18px;
+}
+
+.faq{
+    background-color: rgb(36, 36, 36);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    gap: 30px;
+}
+
+.faq-list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 50px;
+}
+
+.fq{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fq h5{
+    font-size: 21px;
+}
+
+.fq p{
+    color: #cfcfcf;
+}
+
+.calculators{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#no-border, #no-border-1{
+    padding: 0;
+    padding-right: 20px;
+    border-left: none;
+}
+
+.claculators a{
+    text-decoration: none;
+    color: #cfcfcf;
+    padding: 0 20px;
+    border-left: 1px solid #cfcfcf;
+}
+
+
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    gap: 80px;
+    padding: 120px 0;
+}
+
+.upper-footer{
+    display: flex;
+    gap: 80px;
+    
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 50%;
+}
+
+.footer-logo img{
+    width: 160px;
+}
+
+.security-cred{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.security-cred img{
+    width: 450px;
+}
+
+.footer-right{
+    display: flex;
+    gap: 50px;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.footer-right-right,.footer-right-left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.left-links,.left-links-down,.right-links,.right-links-down{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-down{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-links{
+    display: flex;
+}
+
+.footer-down a{
+    text-decoration: none;
+    color: #cfcfcf;
+    border-left: 1px solid #cfcfcf;
+    padding: 0 30px;
+}
+
+#no-border-2{
+border: none;
+}
+
